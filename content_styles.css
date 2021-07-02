@@ -1,0 +1,10 @@
+#fullscreenbtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #3c4043;
+    outline: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}

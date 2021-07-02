@@ -10,7 +10,8 @@
   [
       {
           "matches": ["https://meet.google.com/*"],
-          "js": ["content_script.js"]
+          "css": ["content_styles.css"],
+          "js": ["content_scripts.js"]
       }
   ]
 }
