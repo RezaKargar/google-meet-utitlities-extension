@@ -1,0 +1,16 @@
+{
+  "name": "Google Meet Screen Share Full-Screener",
+  "description": "An extension that allows participents of a meeting make shared screen of presenter full screen",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts":
+  [
+      {
+          "matches": ["https://meet.google.com/*"],
+          "js": ["content_script.js"]
+      }
+  ]
+}
