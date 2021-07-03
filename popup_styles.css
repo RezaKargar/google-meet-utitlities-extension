@@ -1,0 +1,48 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(202, 200, 178);
+}
+
+header {
+    display: flex;
+    padding-left: 8%;
+}
+
+header a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+header a h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+    word-spacing: 100vw;
+    line-height: 25px;
+}
+
+main {
+    display: flex;
+    text-align: center;
+}
+
+main h4 {
+    margin: 0;
+    margin-top: -5px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a i {
+    font-size: 3rem !important;
+    color: black;
+}

@@ -4,14 +4,27 @@
   "version": "1.0.0",
   "manifest_version": 3,
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "19": "images/icon.png",
+      "128": "images/icon128.png"
+    }
   },
-  "content_scripts":
-  [
-      {
-          "matches": ["https://meet.google.com/*"],
-          "css": ["content_styles.css"],
-          "js": ["content_scripts.js"]
-      }
+  "icons": {
+    "19": "images/icon.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*"
+      ],
+      "css": [
+        "content_styles.css"
+      ],
+      "js": [
+        "content_scripts.js"
+      ]
+    }
   ]
 }
