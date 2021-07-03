@@ -40,7 +40,7 @@ function checkStatusOfScreenSharingToChangeDisplayStateOfFullscreenButton(
 		if (oldValue != newValue) {
 			oldValue = newValue;
 
-			if (newValue.search("is presenting") >= 0) {
+			if (newValue.search("is presenting") >= 0 || newValue.search("در حال ارائه است") >= 0) {
 				showFullscreenButton();
 			} else {
 				hideFullscreenButton();
