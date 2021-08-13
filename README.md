@@ -9,14 +9,16 @@
 The features that are currently available:
 - Shared screen fullscreener: <br/>
     When someone shares the screen other participants can full screen the tile of shared screen
+- Tile fullscreener: <br/>
+    Double clicking one someone's tile (shared screen, camera, profile), makes that tile fullscreen 
 
 ## TODOs
 
 The features that will be implemented or task that will be done:
 - [ ] Extension does not work properly on Chrome browser
-- [ ] Adding support for fullscreening a tile by double clicking on it
 - [ ] Adding floating action buttons to bottom of the page when a tile of a shared screen is in full screen mode
 - [x] Implementing the UI for extension's popup 
+- [x] Adding support for fullscreening a tile by double clicking on it
 
 ## Installation
 

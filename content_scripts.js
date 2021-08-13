@@ -99,6 +99,8 @@ function addFullScreenButtonToActionButtonsWrapper() {
 	);
 
 	checkStatusOfScreenSharingToChangeDisplayStateOfFullscreenButton();
+
+	document.querySelectorAll('.xsj2Ff').forEach(n => n.addEventListener("dblclick", () => fullscreenElement(n)));
 }
 
 function hideFullscreenButton() {
@@ -114,17 +116,21 @@ function showFullscreenButton() {
 function makeSharedScreenFullScreen() {
 	const sharedScreen = document.querySelector(".Gv1mTb-aTv5jf");
 	sharedScreen.requestFullscreen();
+	
+	fullscreenElement(sharedScreen);
+}
 
+function fullscreenElement(element){
 	if (
 		(document.fullScreenElement && document.fullScreenElement !== null) ||
 		(!document.mozFullScreen && !document.webkitIsFullScreen)
 	) {
-		if (sharedScreen.requestFullScreen) {
-			sharedScreen.requestFullScreen();
-		} else if (sharedScreen.mozRequestFullScreen) {
-			sharedScreen.mozRequestFullScreen();
-		} else if (sharedScreen.webkitRequestFullScreen) {
-			sharedScreen.webkitRequestFullScreen(
+		if (element.requestFullScreen) {
+			element.requestFullScreen();
+		} else if (element.mozRequestFullScreen) {
+			element.mozRequestFullScreen();
+		} else if (element.webkitRequestFullScreen) {
+			element.webkitRequestFullScreen(
 				Element.ALLOW_KEYBOARD_INPUT
 			);
 		}
